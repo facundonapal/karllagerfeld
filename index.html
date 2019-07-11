@@ -238,6 +238,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
             }
         };
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 
@@ -726,7 +727,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
             </div>
 
 </div>
-
+<div><img src="assets/img/new-arrivals.png" alt=""></div>
 
 
 <div id="slot_12635" class="slot products_slider_homepage  dept_nwrrvls slideshow block"
@@ -764,7 +765,36 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
 </div>
 
+<div class="photoslurp-wraper" data-aos="fade-down" data-aos-duration="2000">
+<!-- Start Photoslurp Embed Code -->
+<h1 class="widget-title">#KARLLAGERFELD</h1>
+<p class="widget-subtitle">Get inspired by images from the world’s top fashion influencers.</p>
+</div>
+<div id="widgetContainerID" class="ps-container" data-aos="fade-up" data-aos-duration="2000">
+<script type="text/javascript">
+ if (!photoSlurpWidgetSettings) {
+    var photoSlurpWidgetSettings = {};
+}
 
+(function() {
+    photoSlurpWidgetSettings['widgetContainerID'] = {
+        widgetId: 'homepageCarousel',
+        widgetType: 'carousel',
+        albumId: 1872,
+        theme: 'modern',
+        lang: 'en',
+        pageType: 'product',
+    };
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = '//static.photoslurp.com/widget/v3/widget_loader.js';
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+})();
+</script>
+  
+</div>
+<!-- End Photoslurp Embed Code -->
 
 
 
@@ -783,6 +813,8 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                  data-srcset="https://www.karl.com/cloud/karlwp/uploads/2019/06/Desktophpsale.jpg?imwidth=690 690w, https://www.karl.com/cloud/karlwp/uploads/2019/06/Desktophpsale.jpg?imwidth=1152 1152w, https://www.karl.com/cloud/karlwp/uploads/2019/06/Desktophpsale.jpg?imwidth=1242 1242w, https://www.karl.com/cloud/karlwp/uploads/2019/06/Desktophpsale.jpg?imwidth=1564 1564w, https://www.karl.com/cloud/karlwp/uploads/2019/06/Desktophpsale.jpg?imwidth=1920 1920w, https://www.karl.com/cloud/karlwp/uploads/2019/06/Desktophpsale.jpg?imwidth=3200 3200w"
                  sizes="(min-width: 1441px) 1600px, (min-width: 1367px) 1440px, (min-width: 769px) 1366px, 100vw" />
                 <div class="overlay middlebottom">
+
+
                 <div class="text-container">
                     <div class="text">
                         <p></p>
@@ -797,8 +829,6 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
 
 
-
-
 <div id="slot_12636"
      class="slot columns columns6 image block middleright "
      style="width:100%; height:13.95%; left:0%; top:53.21%"
@@ -807,7 +837,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
      data-slot-link="/us/women/rue-saint-guillaume"
      data-slot-title=""
      data-ytos-promotion data-ytos-track-promotions-data={&quot;promotion_id&quot;:&quot;slot_12636&quot;,&quot;promotion_name&quot;:&quot;image_rue-saint-guillaume&quot;,&quot;promotion_creative&quot;:&quot;image_rue-saint-guillaume&quot;,&quot;position&quot;:&quot;T_53_L_0_S_100&quot;}>
-                <div class="image-container primary">
+                <div class="image-container primary" style="margin-bottom: 78px;">
                     <img alt=""
                          class="primary grid_lazy_image"
                          data-iesrc="https://cdn3.yoox.biz/cloud/karlwp/uploads/2019/06/Banner-2-D-1602x1124-copy.jpg"
@@ -845,7 +875,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                              </a>
                     </div>
                 </div>
-                <div class="image-container primary">
+                <div class="image-container primary" style="margin-bottom: 78px;">
                     <img alt=""
                          class="primary grid_lazy_image"
                          data-iesrc="https://cdn3.yoox.biz/cloud/karlwp/uploads/2019/06/DesktopMemorial.jpg"
@@ -1337,9 +1367,13 @@ yTos.accessibility.notificationBox.delay = 500;
     <script src="https://www.karl.com/ytos/resources/BASE/js/require/require-2.1.10.min.js"></script>
 
     <script src="https://www.karl.com/ytos/helpers/framework-3.16.10/framework.min.js"></script>
-    <script src='https://www.karl.com/ytos/releases/KARLLAGERFELD/2019-07-02/6c102a7/js/desktop/CommonLib.min.js'></script>
+    <script src='js/CommonLib.min.js'></script>
 
     <script src='https://www.karl.com/ytos/releases/KARLLAGERFELD/2019-07-02/6c102a7/js/desktop/HomeLib.min.js'></script>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -1,0 +1,2108 @@
+.grid {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transition: background-color 1.2s ease;
+    transition: background-color 1.2s ease
+}
+
+.grid>div {
+    /* position: absolute; */
+    overflow: hidden
+}
+
+.grid>div a {
+    display: block;
+    text-decoration: none
+}
+
+.grid>div img {
+    display: block;
+    max-width: 100%
+}
+
+.grid>div .text-container {
+    background-color: #fff;
+    -webkit-transition: background-color 1.2s ease;
+    transition: background-color 1.2s ease;
+    overflow-y: auto;
+    max-height: 100%
+}
+
+.grid>div .text-container span {
+    display: block
+}
+
+.grid>div .text-container .text {
+    position: relative
+}
+
+.grid>div .text-container .text .labeltop {
+    margin-bottom: 20px
+}
+
+.grid>div .text-container .text .title {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    margin-bottom: 40px
+}
+
+body.jp .grid>div .text-container .text .title,body.JP .grid>div .text-container .text .title {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .grid>div .text-container .text .title,body.RU .grid>div .text-container .text .title {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.grid>div .text-container .text .ctabutton {
+    position: relative;
+    display: inline-block;
+    height: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    letter-spacing: .84px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    color: #000;
+    letter-spacing: .7px;
+    position: relative;
+    display: inline-block;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    margin-top: 40px
+}
+
+body.jp .grid>div .text-container .text .ctabutton,body.JP .grid>div .text-container .text .ctabutton {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .grid>div .text-container .text .ctabutton,body.RU .grid>div .text-container .text .ctabutton {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.grid>div .text-container .text .ctabutton:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: visible;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+.grid>div .text-container .text .ctabutton:hover:before,.grid>div .text-container .text .ctabutton:focus:before {
+    visibility: hidden;
+    width: 0
+}
+
+.grid>div .text-container.scrollbar-visible::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px
+}
+
+.grid>div .text-container.scrollbar-visible::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,0.5)
+}
+
+.grid>div.slideshow .overlay,.grid>div.hero_banner .overlay {
+    position: absolute;
+    width: 100%;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    padding: 0 20px
+}
+
+.grid>div.slideshow .overlay.middleleft,.grid>div.hero_banner .overlay.middleleft {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.grid>div.slideshow .overlay.lefttop,.grid>div.hero_banner .overlay.lefttop {
+    top: 20px
+}
+
+.grid>div.slideshow .overlay.middletop,.grid>div.hero_banner .overlay.middletop {
+    top: 20px;
+    text-align: center
+}
+
+.grid>div.slideshow .overlay.leftbottom,.grid>div.hero_banner .overlay.leftbottom {
+    bottom: 20px
+}
+
+.grid>div.slideshow .overlay.middlebottom,.grid>div.hero_banner .overlay.middlebottom {
+    bottom: 20px;
+    text-align: center
+}
+
+.grid>div.slideshow .overlay.center,.grid>div.hero_banner .overlay.center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.grid>div.slideshow .overlay.righttop,.grid>div.hero_banner .overlay.righttop {
+    top: 20px;
+    text-align: right
+}
+
+.grid>div.slideshow .overlay.middleright,.grid>div.hero_banner .overlay.middleright {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.grid>div.slideshow .overlay.rightbottom,.grid>div.hero_banner .overlay.rightbottom {
+    text-align: right;
+    bottom: 20px
+}
+
+.grid>div.slideshow .text-container .text,.grid>div.hero_banner .text-container .text {
+    padding: 20px 25px
+}
+
+body.bgBlack {
+    background-color: #000
+}
+
+body.bgBlack .grid {
+    background-color: #000
+}
+
+body.bgBlack .grid .text-container {
+    color: #fff;
+    background-color: #000
+}
+
+body.bgBlack .grid .text-container .ctabutton {
+    color: #fff
+}
+
+body.bgBlack .grid .text-container .ctabutton:before {
+    background: #fff
+}
+
+.minContent {
+    width: auto !important;
+    width: -webkit-min-content !important;
+    width: -moz-min-content !important;
+    width: min-content !important
+}
+
+.video-player {
+    width: 100%;
+    height: 100%
+}
+
+.video-player .vjs-big-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 65px;
+    height: 65px;
+    background: transparent !important;
+    border-radius: 50%
+}
+
+.video-player .vjs-big-play-button:after {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: center/100% 100% no-repeat url("//www.karl.com/ytos/resources/KARLLAGERFELD/images/icons/icons-new/play.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: ""
+}
+
+.video-player .vjs-big-play-button:hover:after {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: center/100% 100% no-repeat url("//www.karl.com/ytos/resources/KARLLAGERFELD/images/icons/icons-new/play_hover.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: ""
+}
+
+.video-player .vjs-big-play-button .vjs-icon-placeholder {
+    display: none
+}
+
+.video-player .vjs-big-play-button:focus {
+    box-shadow: #555 0 0 2px 2px !important
+}
+
+body.using-mouse .video-player .vjs-big-play-button:focus {
+    box-shadow: none !important
+}
+
+.video-player .vjs-big-play-button:hover {
+    background: transparent !important;
+    box-shadow: none !important
+}
+
+.video-player .vjs-menu.vjs-contextmenu-ui-menu {
+    display: none
+}
+
+#gridLanding .slideshow .image,#gridLanding .slideshow .video {
+    position: relative
+}
+
+#gridLanding .slideshow[data-slot-video] .slick-track,#gridLanding .slideshow[data-slot-video] .slick-list {
+    height: 100%
+}
+
+#gridLanding .overlay {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: none;
+    transform: none;
+    width: 90%
+}
+
+@media (max-width: 1024px) {
+    #gridLanding .overlay {
+        width:-webkit-calc(100% - (30px * 2));
+        width: calc(100% - (30px * 2))
+    }
+}
+
+#gridLanding .overlay.middleleft .text-container {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+#gridLanding .overlay.lefttop .text-container {
+    top: 20px
+}
+
+#gridLanding .overlay.middletop .text-container {
+    top: 20px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#gridLanding .overlay.leftbottom .text-container {
+    bottom: 20px
+}
+
+#gridLanding .overlay.middlebottom .text-container {
+    bottom: 20px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#gridLanding .overlay.center .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#gridLanding .overlay.righttop .text-container {
+    top: 20px;
+    right: 0
+}
+
+#gridLanding .overlay.middleright .text-container {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0
+}
+
+#gridLanding .overlay.rightbottom .text-container {
+    bottom: 20px;
+    right: 0
+}
+
+#gridLanding .overlay .ctabutton:before {
+    visibility: visible
+}
+
+#gridLanding .overlay .text-container {
+    position: absolute;
+    text-align: left
+}
+
+#gridLanding .overlay .text-container .text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+#gridLanding .overlay .text-container .text .title {
+    margin-bottom: 15px
+}
+
+#gridLanding .overlay .text-container .text .ctabutton {
+    margin-top: 0
+}
+
+#gridLanding .overlay .text-container .text h1+.ctabutton,#gridLanding .overlay .text-container .text div+.ctabutton,#gridLanding .overlay .text-container .text span+.ctabutton,#gridLanding .overlay .text-container .text p+.ctabutton,#gridLanding .overlay .text-container .text .bodycopy+.ctabutton {
+    margin-top: 14px
+}
+
+#gridLanding .overlay .text-container .ctabutton {
+    display: inline-block;
+    -webkit-align-self: flex-start;
+    align-self: flex-start
+}
+
+#gridLanding .sliderHero .slick-slide:not(.slick-current) a {
+    visibility: hidden
+}
+
+#gridLanding .slideshow .text-container,#gridLanding .hero_banner .text-container {
+    max-width: 23.65%
+}
+
+@media (max-width: 1024px) {
+    #gridLanding .slideshow .text-container,#gridLanding .hero_banner .text-container {
+        max-width:34%
+    }
+}
+
+#gridLanding .side_padding {
+    padding-left: 6.588%;
+    padding-right: 6.588%
+}
+
+@media (max-width: 1024px) {
+    #gridLanding .side_padding {
+        padding-left:30px;
+        padding-right: 30px
+    }
+}
+
+#gridLanding .side_padding .overlay {
+    width: 80%
+}
+
+#gridLanding .banner-link {
+    display: inline-block;
+    width: auto
+}
+
+#gridLanding .banner-link:focus {
+    box-shadow: none
+}
+
+#gridLanding .banner-link:hover .ctabutton:before {
+    visibility: hidden;
+    width: 0
+}
+
+#gridLanding .grid .slideshow .slot.video .overlay,#gridLanding .grid .hero_banner .slot.video .overlay {
+    pointer-events: none !important
+}
+
+#gridLanding .grid .slideshow .slot.video .overlay .text-container,#gridLanding .grid .hero_banner .slot.video .overlay .text-container {
+    pointer-events: all !important
+}
+
+#gridLanding .slick-slider:not(.products) {
+    padding: 0;
+    width: 100%
+}
+
+#gridLanding .sliderPaginationWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+#gridLanding .sliderPaginationWrapper .play_pause {
+    cursor: pointer;
+    width: 1px;
+    height: 12px;
+    margin-top: 14px
+}
+
+#gridLanding .sliderPaginationWrapper .play_pause.playing {
+    width: 18px;
+    border-color: #a3a3a3;
+    border-style: double;
+    border-width: 0 0 0 9px
+}
+
+#gridLanding .sliderPaginationWrapper .play_pause.paused {
+    position: relative;
+    border-color: transparent transparent transparent #a3a3a3;
+    border-style: solid;
+    border-width: 6px;
+    margin-top: 14px;
+    margin-left: 6px
+}
+
+#gridLanding .sliderPaginationWrapper .play_pause.paused:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 12px;
+    background: #a3a3a3;
+    left: -11px;
+    top: -6px;
+    position: absolute
+}
+
+#gridLanding .scrollDownButton {
+    cursor: pointer;
+    padding: 23px 10px 0
+}
+
+#gridLanding .scrollDownButton:after {
+    content: '';
+    display: inline-block;
+    background-image: url("//www.karl.com/ytos/resources/KARLLAGERFELD/images/icons/arrowDown_black.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 5px;
+    width: 9px;
+    margin: 0 auto
+}
+
+body:not(.using-mouse) #gridLanding .banner-link:focus .ctabutton {
+    box-shadow: #555 0 0 2px 2px
+}
+
+body:not(.using-mouse) #gridLanding .banner-link:focus .ctabutton:before {
+    visibility: hidden;
+    width: 0
+}
+
+.ieBrowser .navigation-sliderHero {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.ieBrowser .title_slot .text-container {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#gridLanding {
+    padding: 0;
+    min-height: 80vh
+}
+
+@media screen and (max-width: 1024px) {
+    #gridLanding {
+        margin:0
+    }
+}
+
+.grid .slot {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: opacity .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: opacity .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out, -webkit-transform .3s ease-in-out
+}
+
+.grid .slot.transparent:not(.noanimation):not(.NOANIMATION) {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px)
+}
+
+.grid .slot.title_slot {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif
+}
+
+body.jp .grid .slot.title_slot,body.JP .grid .slot.title_slot {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .grid .slot.title_slot,body.RU .grid .slot.title_slot {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.grid .slot.title_slot .overlay {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.grid .slot.title_slot .overlay .text-container .text {
+    margin-top: 0
+}
+
+.grid .image .text-container .text p,.grid .image .text-container .description p,.grid .video .text-container .text p,.grid .video .text-container .description p,.grid .slot.text .text-container .text p,.grid .slot.text .text-container .description p {
+    display: block
+}
+
+.grid .image .text.cta,.grid .video .text.cta,.grid .slot.text .text.cta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+.grid .slot.text a {
+    height: 100%
+}
+
+.grid .slot.text .overlay {
+    padding: 0 65px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.grid .slot.text .overlay.center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.grid .slot.text .overlay.right {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end
+}
+
+.grid .slot.text .text-container .description {
+    line-height: 1.6
+}
+
+.grid .slot.text .text-container h1 {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif
+}
+
+body.jp .grid .slot.text .text-container h1,body.JP .grid .slot.text .text-container h1 {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .grid .slot.text .text-container h1,body.RU .grid .slot.text .text-container h1 {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.grid .slot.text .text-container .text {
+    margin-top: 33px
+}
+
+.grid>div.columns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex
+}
+
+.grid>div.columns img {
+    display: inline-block;
+    height: 100%
+}
+
+.grid>div.columns .text-container {
+    padding: 40px 0;
+    padding-left: 5.124%;
+    padding-right: 5.124%
+}
+
+@media (max-width: 1024px) {
+    .grid>div.columns .text-container {
+        padding-left:30px;
+        padding-right: 30px
+    }
+}
+
+.grid>div[class*="bottom"] .text-container {
+    -webkit-align-self: flex-end;
+    align-self: flex-end
+}
+
+.grid>div[class*="middle"] .text-container {
+    -webkit-align-self: center;
+    align-self: center
+}
+
+.grid>div[class*="top"] .text-container {
+    -webkit-align-self: flex-start;
+    align-self: flex-start
+}
+
+.grid>div.columns5 .image-container,.grid>div.columns6 .image-container,.grid>div.columns8 .image-container {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1
+}
+
+.grid>div.columns5[class*="right"] .image-container,.grid>div.columns6[class*="right"] .image-container,.grid>div.columns8[class*="right"] .image-container {
+    text-align: right
+}
+
+.grid>div.columns5 .text-container {
+    width: 34.552%
+}
+
+.grid>div.columns5 .image-container {
+    max-width: 65.448%
+}
+
+.grid>div.columns6 .text-container {
+    width: 41.909%
+}
+
+.grid>div.columns6 .image-container {
+    max-width: 58.091%
+}
+
+.grid>div.columns8 .text-container {
+    width: 56.623%
+}
+
+.grid>div.columns8 .image-container {
+    max-width: 43.377%
+}
+
+.grid>div.columns8[class*="right"] .text-container {
+    padding-right: 17.679%
+}
+
+.grid>div.columns8[class*="left"] .text-container {
+    padding-left: 17.679%
+}
+
+.grid>div.two_images .image-container.primary {
+    width: 30.892%
+}
+
+.grid>div.two_images .image-container.image_alternative,.grid>div.two_images .image-container.image_alt {
+    -webkit-align-self: center;
+    align-self: center;
+    width: 34.552%
+}
+
+.grid>div.two_images .image-container.image_alternative img,.grid>div.two_images .image-container.image_alt img {
+    max-width: 100%;
+    height: auto
+}
+
+.grid>div.two_images .text-container {
+    width: 34.552%
+}
+
+.grid>div.two_images[class*="right"] .image-container.image_alternative,.grid>div.two_images[class*="right"] .image-container.image_alt {
+    padding-right: 7.357%
+}
+
+.grid>div.two_images[class*="left"] .image-container.image_alternative,.grid>div.two_images[class*="left"] .image-container.image_alt {
+    text-align: right;
+    padding-left: 7.357%
+}
+
+.grid>div.mosaic .text-container {
+    position: absolute;
+    bottom: 0
+}
+
+.grid>div.mosaic .text-container .text {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 12px;
+    padding-right: 7.357%
+}
+
+.grid>div.mosaic .text-container .text .title {
+    margin-bottom: 10px
+}
+
+.grid>div.mosaic .text-container .text .ctabutton {
+    margin-top: 24px
+}
+
+.grid>div.quote .text {
+    font-weight: 400;
+    font-family: "GothamBook",Arial,sans-serif;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    width: 50%
+}
+
+body.jp .grid>div.quote .text,body.JP .grid>div.quote .text {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 400 !important
+}
+
+body.ru .grid>div.quote .text,body.RU .grid>div.quote .text {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 400 !important
+}
+
+.grid .slot.video.videoPlaying .overlay {
+    display: none
+}
+
+.grid .slot.video .video-player {
+    height: auto;
+    background-color: #fff
+}
+
+.grid .slot.video .video-js {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto
+}
+
+.grid .slot.video .video-js video {
+    pointer-events: none;
+    position: relative;
+    height: 100%;
+    margin: 0 auto
+}
+
+.grid .slot.video .video-js .vjs-play-progress:before {
+    z-index: auto !important
+}
+
+.grid .slot.video.ratio_16_9 .video-js {
+    width: 74.6%
+}
+
+.grid .slot.video .overlay {
+    top: auto
+}
+
+.slot.COUNTDOWN {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.slot.COUNTDOWN img.alternative {
+    display: none
+}
+
+.slot.COUNTDOWN img {
+    width: 89.748%;
+    margin: auto
+}
+
+.slot.COUNTDOWN.ended .countDownWrapper {
+    display: none
+}
+
+.slot.COUNTDOWN.ended img.primary {
+    display: none
+}
+
+.slot.COUNTDOWN.ended img.alternative {
+    display: block
+}
+
+.countDownWrapper {
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    display: table;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1
+}
+
+body.jp .countDownWrapper,body.JP .countDownWrapper {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .countDownWrapper,body.RU .countDownWrapper {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+#countDownBox {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase
+}
+
+#countDownBox .countdownTitle {
+    display: none
+}
+
+#countDownBox .countdownTimer {
+    color: #000;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 11rem;
+    margin-bottom: 5rem
+}
+
+@media (max-width: 1023px) {
+    #countDownBox .countdownTimer {
+        margin-top:0
+    }
+}
+
+#countDownBox .countEl {
+    background: #fff;
+    padding: 30px 0;
+    margin: 0 10px;
+    min-width: 180px
+}
+
+@media (max-width: 1023px) {
+    #countDownBox .countEl {
+        min-width:140px
+    }
+}
+
+#countDownBox .countEl span {
+    display: block
+}
+
+#countDownBox .countNum {
+    font-size: 4.8rem;
+    line-height: 0.74
+}
+
+#countDownBox .countText {
+    font-size: 1.8rem;
+    margin-top: 2rem
+}
+
+#countDownBox a.countdownButton {
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    padding: 15px 30px;
+    display: inline-block
+}
+
+body.jp #countDownBox a.countdownButton,body.JP #countDownBox a.countdownButton {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru #countDownBox a.countdownButton,body.RU #countDownBox a.countdownButton {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.selectColor,.selectSize {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0
+}
+
+.selectColor .selectionTitle,.selectSize .selectionTitle {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding-right: 10px
+}
+
+.selectColor>div,.selectColor>fieldset,.selectSize>div,.selectSize>fieldset {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3
+}
+
+.selectColor button,.selectSize button {
+    display: none
+}
+
+.selectColor .selectionTitle .text:after,.selectSize .selectionTitle .text:after {
+    content: ": "
+}
+
+body.fr .selectColor .selectionTitle .text:after,body.fr .selectSize .selectionTitle .text:after {
+    content: " : "
+}
+
+.selectColor .selectionLabel,.selectSize .selectionLabel {
+    display: none
+}
+
+.selectColor ul,.selectSize ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.selectColor input[type='radio'],.selectSize input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    box-shadow: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px
+}
+
+.selectColor input[type='radio']:hover,.selectSize input[type='radio']:hover {
+    cursor: pointer
+}
+
+.selectColor .selected input[type="radio"],.selectSize .selected input[type="radio"] {
+    cursor: default
+}
+
+.selectColor .inner,.selectSize .inner {
+    background: transparent
+}
+
+.selectColor li {
+    position: relative;
+    cursor: pointer;
+    margin: 0 16px 5px 0;
+    -webkit-align-self: center;
+    align-self: center;
+    border: 1px solid transparent;
+    padding: 1px
+}
+
+.selectColor li .inner label {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.selectColor li .inner .rgbColor {
+    display: block;
+    border: 1px solid #555;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    order: 1
+}
+
+.selectColor li .inner .description {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    order: 2
+}
+
+.selectColor li.selected {
+    border-color: #000
+}
+
+.selectColor li.disabled {
+    opacity: .5
+}
+
+.selectSize li {
+    position: relative;
+    cursor: pointer;
+    margin: 5px 30px 0 0;
+    color: #555;
+    min-width: 18px;
+    text-align: center
+}
+
+.selectSize li:last-child {
+    margin-right: 0
+}
+
+.selectSize li.selected {
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    color: #000
+}
+
+body.jp .selectSize li.selected,body.JP .selectSize li.selected {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .selectSize li.selected,body.RU .selectSize li.selected {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.selectSize li.disabled {
+    color: #555
+}
+
+.selectSize li.disabled:after {
+    content: "";
+    background-color: #555;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 1px;
+    height: 100%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.selectSize li .availabilityWarning {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.selectSizeAlert,.selectColorAlert {
+    z-index: 2;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    background-color: gray;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    display: none
+}
+
+body.jp .selectSizeAlert,body.JP .selectSizeAlert,body.jp .selectColorAlert,body.JP .selectColorAlert {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .selectSizeAlert,body.RU .selectSizeAlert,body.ru .selectColorAlert,body.RU .selectColorAlert {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.selectSizeAlert .inner,.selectColorAlert .inner {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center
+}
+
+.selectSizeAlert.active,.selectColorAlert.active {
+    display: block
+}
+
+.ecommerce_panel .selectColor,.ecommerce_panel .selectSize {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0
+}
+
+.ecommerce_panel .selectColor .selectionTitle,.ecommerce_panel .selectColor .selectionLabel,.ecommerce_panel .selectSize .selectionTitle,.ecommerce_panel .selectSize .selectionLabel {
+    display: inline-block
+}
+
+.ecommerce_panel .selectColor input[type='radio'],.ecommerce_panel .selectSize input[type='radio'] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 1.8rem;
+    width: 1.8rem
+}
+
+.ecommerce_panel .selectColor .selectionLabel {
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif
+}
+
+body.jp .ecommerce_panel .selectColor .selectionLabel,body.JP .ecommerce_panel .selectColor .selectionLabel {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .ecommerce_panel .selectColor .selectionLabel,body.RU .ecommerce_panel .selectColor .selectionLabel {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.ecommerce_panel .selectColor li {
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0 25px 6px 0
+}
+
+.ecommerce_panel .selectColor li .inner {
+    height: 1.8rem;
+    width: 1.8rem
+}
+
+.ecommerce_panel .selectColor li .inner label,.ecommerce_panel .selectColor li .inner .rgbColor {
+    height: 1.8rem;
+    width: 1.8rem
+}
+
+.ecommerce_panel .selectColor li .inner label {
+    display: block
+}
+
+.ecommerce_panel .selectColor li .inner .description {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.ecommerce_panel .selectSize .selectionLabel {
+    margin-right: 30%
+}
+
+.ecommerce_panel .selectSize .selectionLabel .text {
+    display: none
+}
+
+.ecommerce_panel .selectSize li:not(.disabled) {
+    color: #000
+}
+
+.ecommerce_panel .selectSizeWrapper {
+    position: relative
+}
+
+.quickbuy-layer .selectColor .selectionTitle {
+    display: none
+}
+
+.quickbuy-layer .selectSize {
+    display: block
+}
+
+.quickbuy-layer .selectSize .selectionTitle {
+    margin-bottom: 5px
+}
+
+.quickbuy-layer .selectColor [data-ytos-color-selector]:not(.selected) {
+    display: none
+}
+
+.quickbuy-layer .selectColor li {
+    cursor: default
+}
+
+.quickbuy-layer .selectColor .selected {
+    border: none
+}
+
+.quickbuy-layer .selectColor .description {
+    margin-left: 10px
+}
+
+.quickbuy-layer .selectSize .disabled {
+    display: none
+}
+
+.relatedItems .mainImageContainer,.experienceResults .mainImageContainer,.products .mainImageContainer {
+    position: relative;
+    z-index: 1
+}
+
+.relatedItems .mainImageContainer:before,.experienceResults .mainImageContainer:before,.products .mainImageContainer:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 118%
+}
+
+.relatedItems .mainImageContainer img,.experienceResults .mainImageContainer img,.products .mainImageContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s
+}
+
+.relatedItems .secondaryImageContainer,.experienceResults .secondaryImageContainer,.products .secondaryImageContainer {
+    z-index: 9;
+    opacity: 0
+}
+
+.relatedItems .secondaryImageContainer img,.experienceResults .secondaryImageContainer img,.products .secondaryImageContainer img {
+    opacity: 0
+}
+
+.relatedItems .secondaryImageContainer img[srcset],.experienceResults .secondaryImageContainer img[srcset],.products .secondaryImageContainer img[srcset] {
+    opacity: 1
+}
+
+.relatedItems .relatedItem,.relatedItems .item,.experienceResults .relatedItem,.experienceResults .item,.products .relatedItem,.products .item {
+    min-height: 310px;
+    display: inline-block;
+    width: 31.33%
+}
+
+body:not(.scrolling) .relatedItems .relatedItem:hover .secondaryImageContainer,body:not(.scrolling) .relatedItems .item:hover .secondaryImageContainer,body:not(.scrolling) .experienceResults .relatedItem:hover .secondaryImageContainer,body:not(.scrolling) .experienceResults .item:hover .secondaryImageContainer,body:not(.scrolling) .products .relatedItem:hover .secondaryImageContainer,body:not(.scrolling) .products .item:hover .secondaryImageContainer {
+    opacity: 1
+}
+
+.relatedItems .relatedItem .wrapper,.relatedItems .item .wrapper,.experienceResults .relatedItem .wrapper,.experienceResults .item .wrapper,.products .relatedItem .wrapper,.products .item .wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    flex-flow: column
+}
+
+.relatedItems .relatedItem .wrapper a,.relatedItems .item .wrapper a,.experienceResults .relatedItem .wrapper a,.experienceResults .item .wrapper a,.products .relatedItem .wrapper a,.products .item .wrapper a {
+    display: block
+}
+
+.relatedItems .relatedItem .wrapper .colorsWrapper,.relatedItems .item .wrapper .colorsWrapper,.experienceResults .relatedItem .wrapper .colorsWrapper,.experienceResults .item .wrapper .colorsWrapper,.products .relatedItem .wrapper .colorsWrapper,.products .item .wrapper .colorsWrapper {
+    display: inline;
+    padding: 20px 10px
+}
+
+.relatedItems .relatedItem .wrapper .firstColor,.relatedItems .item .wrapper .firstColor,.experienceResults .relatedItem .wrapper .firstColor,.experienceResults .item .wrapper .firstColor,.products .relatedItem .wrapper .firstColor,.products .item .wrapper .firstColor {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start
+}
+
+.relatedItems .relatedItem .wrapper .firstColor>.availableColors,.relatedItems .item .wrapper .firstColor>.availableColors,.experienceResults .relatedItem .wrapper .firstColor>.availableColors,.experienceResults .item .wrapper .firstColor>.availableColors,.products .relatedItem .wrapper .firstColor>.availableColors,.products .item .wrapper .firstColor>.availableColors {
+    margin-right: 30px
+}
+
+.relatedItems .relatedItem .wrapper .availableColors a,.relatedItems .item .wrapper .availableColors a,.experienceResults .relatedItem .wrapper .availableColors a,.experienceResults .item .wrapper .availableColors a,.products .relatedItem .wrapper .availableColors a,.products .item .wrapper .availableColors a {
+    display: inline-block;
+    text-decoration: none
+}
+
+.relatedItems .relatedItem .wrapper .availableColors a .inner,.relatedItems .item .wrapper .availableColors a .inner,.experienceResults .relatedItem .wrapper .availableColors a .inner,.experienceResults .item .wrapper .availableColors a .inner,.products .relatedItem .wrapper .availableColors a .inner,.products .item .wrapper .availableColors a .inner {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.relatedItems .relatedItem .wrapper .availableColors a .rgbColor,.relatedItems .item .wrapper .availableColors a .rgbColor,.experienceResults .relatedItem .wrapper .availableColors a .rgbColor,.experienceResults .item .wrapper .availableColors a .rgbColor,.products .relatedItem .wrapper .availableColors a .rgbColor,.products .item .wrapper .availableColors a .rgbColor {
+    border: 1px solid #555;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%
+}
+
+.relatedItems .relatedItem .wrapper .availableColors a .description,.relatedItems .item .wrapper .availableColors a .description,.experienceResults .relatedItem .wrapper .availableColors a .description,.experienceResults .item .wrapper .availableColors a .description,.products .relatedItem .wrapper .availableColors a .description,.products .item .wrapper .availableColors a .description {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: .72px;
+    font-weight: 400;
+    font-family: "GothamBook",Arial,sans-serif;
+    padding-left: 9px
+}
+
+body.jp .relatedItems .relatedItem .wrapper .availableColors a .description,body.JP .relatedItems .relatedItem .wrapper .availableColors a .description,body.jp .relatedItems .item .wrapper .availableColors a .description,body.JP .relatedItems .item .wrapper .availableColors a .description,body.jp .experienceResults .relatedItem .wrapper .availableColors a .description,body.JP .experienceResults .relatedItem .wrapper .availableColors a .description,body.jp .experienceResults .item .wrapper .availableColors a .description,body.JP .experienceResults .item .wrapper .availableColors a .description,body.jp .products .relatedItem .wrapper .availableColors a .description,body.JP .products .relatedItem .wrapper .availableColors a .description,body.jp .products .item .wrapper .availableColors a .description,body.JP .products .item .wrapper .availableColors a .description {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 400 !important
+}
+
+body.ru .relatedItems .relatedItem .wrapper .availableColors a .description,body.RU .relatedItems .relatedItem .wrapper .availableColors a .description,body.ru .relatedItems .item .wrapper .availableColors a .description,body.RU .relatedItems .item .wrapper .availableColors a .description,body.ru .experienceResults .relatedItem .wrapper .availableColors a .description,body.RU .experienceResults .relatedItem .wrapper .availableColors a .description,body.ru .experienceResults .item .wrapper .availableColors a .description,body.RU .experienceResults .item .wrapper .availableColors a .description,body.ru .products .relatedItem .wrapper .availableColors a .description,body.RU .products .relatedItem .wrapper .availableColors a .description,body.ru .products .item .wrapper .availableColors a .description,body.RU .products .item .wrapper .availableColors a .description {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 400 !important
+}
+
+.relatedItems .relatedItem .wrapper .availableColors a:hover .description,.relatedItems .item .wrapper .availableColors a:hover .description,.experienceResults .relatedItem .wrapper .availableColors a:hover .description,.experienceResults .item .wrapper .availableColors a:hover .description,.products .relatedItem .wrapper .availableColors a:hover .description,.products .item .wrapper .availableColors a:hover .description {
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif
+}
+
+body.jp .relatedItems .relatedItem .wrapper .availableColors a:hover .description,body.JP .relatedItems .relatedItem .wrapper .availableColors a:hover .description,body.jp .relatedItems .item .wrapper .availableColors a:hover .description,body.JP .relatedItems .item .wrapper .availableColors a:hover .description,body.jp .experienceResults .relatedItem .wrapper .availableColors a:hover .description,body.JP .experienceResults .relatedItem .wrapper .availableColors a:hover .description,body.jp .experienceResults .item .wrapper .availableColors a:hover .description,body.JP .experienceResults .item .wrapper .availableColors a:hover .description,body.jp .products .relatedItem .wrapper .availableColors a:hover .description,body.JP .products .relatedItem .wrapper .availableColors a:hover .description,body.jp .products .item .wrapper .availableColors a:hover .description,body.JP .products .item .wrapper .availableColors a:hover .description {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .relatedItems .relatedItem .wrapper .availableColors a:hover .description,body.RU .relatedItems .relatedItem .wrapper .availableColors a:hover .description,body.ru .relatedItems .item .wrapper .availableColors a:hover .description,body.RU .relatedItems .item .wrapper .availableColors a:hover .description,body.ru .experienceResults .relatedItem .wrapper .availableColors a:hover .description,body.RU .experienceResults .relatedItem .wrapper .availableColors a:hover .description,body.ru .experienceResults .item .wrapper .availableColors a:hover .description,body.RU .experienceResults .item .wrapper .availableColors a:hover .description,body.ru .products .relatedItem .wrapper .availableColors a:hover .description,body.RU .products .relatedItem .wrapper .availableColors a:hover .description,body.ru .products .item .wrapper .availableColors a:hover .description,body.RU .products .item .wrapper .availableColors a:hover .description {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.relatedItems .relatedItem .wrapper .more-colors-cta,.relatedItems .item .wrapper .more-colors-cta,.experienceResults .relatedItem .wrapper .more-colors-cta,.experienceResults .item .wrapper .more-colors-cta,.products .relatedItem .wrapper .more-colors-cta,.products .item .wrapper .more-colors-cta {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: .72px;
+    font-weight: 400;
+    font-family: "GothamBook",Arial,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-transform: lowercase
+}
+
+body.jp .relatedItems .relatedItem .wrapper .more-colors-cta,body.JP .relatedItems .relatedItem .wrapper .more-colors-cta,body.jp .relatedItems .item .wrapper .more-colors-cta,body.JP .relatedItems .item .wrapper .more-colors-cta,body.jp .experienceResults .relatedItem .wrapper .more-colors-cta,body.JP .experienceResults .relatedItem .wrapper .more-colors-cta,body.jp .experienceResults .item .wrapper .more-colors-cta,body.JP .experienceResults .item .wrapper .more-colors-cta,body.jp .products .relatedItem .wrapper .more-colors-cta,body.JP .products .relatedItem .wrapper .more-colors-cta,body.jp .products .item .wrapper .more-colors-cta,body.JP .products .item .wrapper .more-colors-cta {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 400 !important
+}
+
+body.ru .relatedItems .relatedItem .wrapper .more-colors-cta,body.RU .relatedItems .relatedItem .wrapper .more-colors-cta,body.ru .relatedItems .item .wrapper .more-colors-cta,body.RU .relatedItems .item .wrapper .more-colors-cta,body.ru .experienceResults .relatedItem .wrapper .more-colors-cta,body.RU .experienceResults .relatedItem .wrapper .more-colors-cta,body.ru .experienceResults .item .wrapper .more-colors-cta,body.RU .experienceResults .item .wrapper .more-colors-cta,body.ru .products .relatedItem .wrapper .more-colors-cta,body.RU .products .relatedItem .wrapper .more-colors-cta,body.ru .products .item .wrapper .more-colors-cta,body.RU .products .item .wrapper .more-colors-cta {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 400 !important
+}
+
+.relatedItems .relatedItem .wrapper .more-colors-cta:hover,.relatedItems .item .wrapper .more-colors-cta:hover,.experienceResults .relatedItem .wrapper .more-colors-cta:hover,.experienceResults .item .wrapper .more-colors-cta:hover,.products .relatedItem .wrapper .more-colors-cta:hover,.products .item .wrapper .more-colors-cta:hover {
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif
+}
+
+body.jp .relatedItems .relatedItem .wrapper .more-colors-cta:hover,body.JP .relatedItems .relatedItem .wrapper .more-colors-cta:hover,body.jp .relatedItems .item .wrapper .more-colors-cta:hover,body.JP .relatedItems .item .wrapper .more-colors-cta:hover,body.jp .experienceResults .relatedItem .wrapper .more-colors-cta:hover,body.JP .experienceResults .relatedItem .wrapper .more-colors-cta:hover,body.jp .experienceResults .item .wrapper .more-colors-cta:hover,body.JP .experienceResults .item .wrapper .more-colors-cta:hover,body.jp .products .relatedItem .wrapper .more-colors-cta:hover,body.JP .products .relatedItem .wrapper .more-colors-cta:hover,body.jp .products .item .wrapper .more-colors-cta:hover,body.JP .products .item .wrapper .more-colors-cta:hover {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .relatedItems .relatedItem .wrapper .more-colors-cta:hover,body.RU .relatedItems .relatedItem .wrapper .more-colors-cta:hover,body.ru .relatedItems .item .wrapper .more-colors-cta:hover,body.RU .relatedItems .item .wrapper .more-colors-cta:hover,body.ru .experienceResults .relatedItem .wrapper .more-colors-cta:hover,body.RU .experienceResults .relatedItem .wrapper .more-colors-cta:hover,body.ru .experienceResults .item .wrapper .more-colors-cta:hover,body.RU .experienceResults .item .wrapper .more-colors-cta:hover,body.ru .products .relatedItem .wrapper .more-colors-cta:hover,body.RU .products .relatedItem .wrapper .more-colors-cta:hover,body.ru .products .item .wrapper .more-colors-cta:hover,body.RU .products .item .wrapper .more-colors-cta:hover {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.relatedItems .relatedItem .wrapper .more-colors-cta .icon,.relatedItems .item .wrapper .more-colors-cta .icon,.experienceResults .relatedItem .wrapper .more-colors-cta .icon,.experienceResults .item .wrapper .more-colors-cta .icon,.products .relatedItem .wrapper .more-colors-cta .icon,.products .item .wrapper .more-colors-cta .icon {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background: center/100% 100% no-repeat url("//www.karl.com/ytos/resources/KARLLAGERFELD/images/icons/icons-new/plus.svg");
+    margin-right: 10px
+}
+
+.relatedItems .relatedItem .wrapper .more-colors-layer,.relatedItems .item .wrapper .more-colors-layer,.experienceResults .relatedItem .wrapper .more-colors-layer,.experienceResults .item .wrapper .more-colors-layer,.products .relatedItem .wrapper .more-colors-layer,.products .item .wrapper .more-colors-layer {
+    padding: 25px 20px
+}
+
+.relatedItems .relatedItem .wrapper .more-colors-layer .info-wrapper .info,.relatedItems .item .wrapper .more-colors-layer .info-wrapper .info,.experienceResults .relatedItem .wrapper .more-colors-layer .info-wrapper .info,.experienceResults .item .wrapper .more-colors-layer .info-wrapper .info,.products .relatedItem .wrapper .more-colors-layer .info-wrapper .info,.products .item .wrapper .more-colors-layer .info-wrapper .info {
+    padding: 0;
+    margin: 0
+}
+
+.relatedItems .relatedItem .wrapper .more-colors-layer .availableColors li,.relatedItems .item .wrapper .more-colors-layer .availableColors li,.experienceResults .relatedItem .wrapper .more-colors-layer .availableColors li,.experienceResults .item .wrapper .more-colors-layer .availableColors li,.products .relatedItem .wrapper .more-colors-layer .availableColors li,.products .item .wrapper .more-colors-layer .availableColors li {
+    padding-top: 17px;
+    display: block
+}
+
+body.edge .relatedItems .relatedItem.merchandisingBanner .wrapper,body.edge .relatedItems .item.merchandisingBanner .wrapper,body.edge .experienceResults .relatedItem.merchandisingBanner .wrapper,body.edge .experienceResults .item.merchandisingBanner .wrapper,body.edge .products .relatedItem.merchandisingBanner .wrapper,body.edge .products .item.merchandisingBanner .wrapper {
+    display: block
+}
+
+.relatedItems .relatedItem .image,.relatedItems .item .image,.experienceResults .relatedItem .image,.experienceResults .item .image,.products .relatedItem .image,.products .item .image {
+    position: relative
+}
+
+.relatedItems .relatedItem .image .secondaryImageContainer,.relatedItems .item .image .secondaryImageContainer,.experienceResults .relatedItem .image .secondaryImageContainer,.experienceResults .item .image .secondaryImageContainer,.products .relatedItem .image .secondaryImageContainer,.products .item .image .secondaryImageContainer {
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.tablet .relatedItems .relatedItem .image .secondaryImageContainer,.tablet .relatedItems .item .image .secondaryImageContainer,.tablet .experienceResults .relatedItem .image .secondaryImageContainer,.tablet .experienceResults .item .image .secondaryImageContainer,.tablet .products .relatedItem .image .secondaryImageContainer,.tablet .products .item .image .secondaryImageContainer {
+    display: none
+}
+
+.relatedItems .relatedItem .image img,.relatedItems .item .image img,.experienceResults .relatedItem .image img,.experienceResults .item .image img,.products .relatedItem .image img,.products .item .image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.relatedItems .relatedItem .info,.relatedItems .item .info,.experienceResults .relatedItem .info,.experienceResults .item .info,.products .relatedItem .info,.products .item .info {
+    display: inline-table;
+    padding: 17px 0 0 10px
+}
+
+.relatedItems .relatedItem .info .soldout,.relatedItems .item .info .soldout,.experienceResults .relatedItem .info .soldout,.experienceResults .item .info .soldout,.products .relatedItem .info .soldout,.products .item .info .soldout {
+    font-weight: 400;
+    font-family: "GothamMedium",Arial,sans-serif;
+    color: #a8172d;
+    text-transform: uppercase
+}
+
+body.jp .relatedItems .relatedItem .info .soldout,body.JP .relatedItems .relatedItem .info .soldout,body.jp .relatedItems .item .info .soldout,body.JP .relatedItems .item .info .soldout,body.jp .experienceResults .relatedItem .info .soldout,body.JP .experienceResults .relatedItem .info .soldout,body.jp .experienceResults .item .info .soldout,body.JP .experienceResults .item .info .soldout,body.jp .products .relatedItem .info .soldout,body.JP .products .relatedItem .info .soldout,body.jp .products .item .info .soldout,body.JP .products .item .info .soldout {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 500 !important
+}
+
+body.ru .relatedItems .relatedItem .info .soldout,body.RU .relatedItems .relatedItem .info .soldout,body.ru .relatedItems .item .info .soldout,body.RU .relatedItems .item .info .soldout,body.ru .experienceResults .relatedItem .info .soldout,body.RU .experienceResults .relatedItem .info .soldout,body.ru .experienceResults .item .info .soldout,body.RU .experienceResults .item .info .soldout,body.ru .products .relatedItem .info .soldout,body.RU .products .relatedItem .info .soldout,body.ru .products .item .info .soldout,body.RU .products .item .info .soldout {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 500 !important
+}
+
+.relatedItems .relatedItem .title,.relatedItems .item .title,.experienceResults .relatedItem .title,.experienceResults .item .title,.products .relatedItem .title,.products .item .title {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: .84px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    display: inline-block;
+    padding-bottom: 10px
+}
+
+body.jp .relatedItems .relatedItem .title,body.JP .relatedItems .relatedItem .title,body.jp .relatedItems .item .title,body.JP .relatedItems .item .title,body.jp .experienceResults .relatedItem .title,body.JP .experienceResults .relatedItem .title,body.jp .experienceResults .item .title,body.JP .experienceResults .item .title,body.jp .products .relatedItem .title,body.JP .products .relatedItem .title,body.jp .products .item .title,body.JP .products .item .title {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .relatedItems .relatedItem .title,body.RU .relatedItems .relatedItem .title,body.ru .relatedItems .item .title,body.RU .relatedItems .item .title,body.ru .experienceResults .relatedItem .title,body.RU .experienceResults .relatedItem .title,body.ru .experienceResults .item .title,body.RU .experienceResults .item .title,body.ru .products .relatedItem .title,body.RU .products .relatedItem .title,body.ru .products .item .title,body.RU .products .item .title {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.relatedItems .expand-layer,.experienceResults .expand-layer,.products .expand-layer {
+    z-index: 11;
+    position: absolute;
+    padding-top: 25px;
+    background-color: #fff;
+    left: 2px;
+    right: 2px;
+    bottom: -300px;
+    -webkit-transition: bottom 0.5s;
+    transition: bottom 0.5s
+}
+
+.relatedItems .expand-layer .fade,.experienceResults .expand-layer .fade,.products .expand-layer .fade {
+    opacity: 0;
+    -webkit-transition: opacity 1.25s;
+    transition: opacity 1.25s
+}
+
+.relatedItems .expand-layer.is-open,.experienceResults .expand-layer.is-open,.products .expand-layer.is-open {
+    -webkit-transition: bottom 0.7s;
+    transition: bottom 0.7s;
+    bottom: 2px
+}
+
+.relatedItems .expand-layer.is-open .fade,.experienceResults .expand-layer.is-open .fade,.products .expand-layer.is-open .fade {
+    opacity: 1
+}
+
+.relatedItems .expand-layer .closeButtonWrapper,.experienceResults .expand-layer .closeButtonWrapper,.products .expand-layer .closeButtonWrapper {
+    top: 20px;
+    right: 7px
+}
+
+.relatedItems .expand-layer .info,.experienceResults .expand-layer .info,.products .expand-layer .info {
+    padding: 0 25px 0 10px
+}
+
+.relatedItems .expand-layer .itemColorSizeWrapper,.experienceResults .expand-layer .itemColorSizeWrapper,.products .expand-layer .itemColorSizeWrapper {
+    padding: 0 10px
+}
+
+.relatedItems .quickBuyWrapper,.experienceResults .quickBuyWrapper,.products .quickBuyWrapper {
+    width: 100%
+}
+
+.relatedItems .quick-buy-cta,.experienceResults .quick-buy-cta,.products .quick-buy-cta {
+    min-width: 380px;
+    padding: 11px 40px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    letter-spacing: .84px;
+    font-weight: 400;
+    font-family: "GothamBook",Arial,sans-serif;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+    background: transparent !important;
+    background-color: transparent !important;
+    min-width: 100%
+}
+
+body.jp .relatedItems .quick-buy-cta,body.JP .relatedItems .quick-buy-cta,body.jp .experienceResults .quick-buy-cta,body.JP .experienceResults .quick-buy-cta,body.jp .products .quick-buy-cta,body.JP .products .quick-buy-cta {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 400 !important
+}
+
+body.ru .relatedItems .quick-buy-cta,body.RU .relatedItems .quick-buy-cta,body.ru .experienceResults .quick-buy-cta,body.RU .experienceResults .quick-buy-cta,body.ru .products .quick-buy-cta,body.RU .products .quick-buy-cta {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 400 !important
+}
+
+.relatedItems .quick-buy-cta span,.relatedItems .quick-buy-cta .text,.experienceResults .quick-buy-cta span,.experienceResults .quick-buy-cta .text,.products .quick-buy-cta span,.products .quick-buy-cta .text {
+    position: relative;
+    padding: 0;
+    margin: 0
+}
+
+.relatedItems .quick-buy-cta:before,.experienceResults .quick-buy-cta:before,.products .quick-buy-cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #000
+}
+
+.relatedItems .quick-buy-cta:hover:before,.relatedItems .quick-buy-cta:focus:before,.experienceResults .quick-buy-cta:hover:before,.experienceResults .quick-buy-cta:focus:before,.products .quick-buy-cta:hover:before,.products .quick-buy-cta:focus:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    cursor: pointer
+}
+
+.relatedItems .quick-buy-cta:hover .icon,.relatedItems .quick-buy-cta:hover .text,.relatedItems .quick-buy-cta:focus .icon,.relatedItems .quick-buy-cta:focus .text,.experienceResults .quick-buy-cta:hover .icon,.experienceResults .quick-buy-cta:hover .text,.experienceResults .quick-buy-cta:focus .icon,.experienceResults .quick-buy-cta:focus .text,.products .quick-buy-cta:hover .icon,.products .quick-buy-cta:hover .text,.products .quick-buy-cta:focus .icon,.products .quick-buy-cta:focus .text {
+    cursor: pointer
+}
+
+.relatedItems .quick-buy-cta[disabled],.relatedItems .quick-buy-cta.is-disabled,.experienceResults .quick-buy-cta[disabled],.experienceResults .quick-buy-cta.is-disabled,.products .quick-buy-cta[disabled],.products .quick-buy-cta.is-disabled {
+    color: gray
+}
+
+.relatedItems .quick-buy-cta[disabled]:before,.relatedItems .quick-buy-cta.is-disabled:before,.experienceResults .quick-buy-cta[disabled]:before,.experienceResults .quick-buy-cta.is-disabled:before,.products .quick-buy-cta[disabled]:before,.products .quick-buy-cta.is-disabled:before {
+    background-color: #fff;
+    border: 1px solid gray;
+    cursor: default
+}
+
+.relatedItems .quick-buy-cta[disabled]:hover,.relatedItems .quick-buy-cta.is-disabled:hover,.experienceResults .quick-buy-cta[disabled]:hover,.experienceResults .quick-buy-cta.is-disabled:hover,.products .quick-buy-cta[disabled]:hover,.products .quick-buy-cta.is-disabled:hover {
+    cursor: default
+}
+
+.relatedItems .quick-buy-cta[disabled]:hover:before,.relatedItems .quick-buy-cta.is-disabled:hover:before,.experienceResults .quick-buy-cta[disabled]:hover:before,.experienceResults .quick-buy-cta.is-disabled:hover:before,.products .quick-buy-cta[disabled]:hover:before,.products .quick-buy-cta.is-disabled:hover:before {
+    cursor: default;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.relatedItems .quick-buy-cta[disabled]:hover .icon,.relatedItems .quick-buy-cta[disabled]:hover .text,.relatedItems .quick-buy-cta.is-disabled:hover .icon,.relatedItems .quick-buy-cta.is-disabled:hover .text,.experienceResults .quick-buy-cta[disabled]:hover .icon,.experienceResults .quick-buy-cta[disabled]:hover .text,.experienceResults .quick-buy-cta.is-disabled:hover .icon,.experienceResults .quick-buy-cta.is-disabled:hover .text,.products .quick-buy-cta[disabled]:hover .icon,.products .quick-buy-cta[disabled]:hover .text,.products .quick-buy-cta.is-disabled:hover .icon,.products .quick-buy-cta.is-disabled:hover .text {
+    cursor: default
+}
+
+.relatedItems .buttons_box,.experienceResults .buttons_box,.products .buttons_box {
+    position: relative;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row
+}
+
+.relatedItems .addItemToShoppingBagButton,.experienceResults .addItemToShoppingBagButton,.products .addItemToShoppingBagButton {
+    min-width: 400px;
+    padding: 11px 40px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    letter-spacing: .84px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    background: transparent !important;
+    background-color: transparent !important;
+    min-width: 100%
+}
+
+body.jp .relatedItems .addItemToShoppingBagButton,body.JP .relatedItems .addItemToShoppingBagButton,body.jp .experienceResults .addItemToShoppingBagButton,body.JP .experienceResults .addItemToShoppingBagButton,body.jp .products .addItemToShoppingBagButton,body.JP .products .addItemToShoppingBagButton {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .relatedItems .addItemToShoppingBagButton,body.RU .relatedItems .addItemToShoppingBagButton,body.ru .experienceResults .addItemToShoppingBagButton,body.RU .experienceResults .addItemToShoppingBagButton,body.ru .products .addItemToShoppingBagButton,body.RU .products .addItemToShoppingBagButton {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+.relatedItems .addItemToShoppingBagButton span,.relatedItems .addItemToShoppingBagButton .text,.experienceResults .addItemToShoppingBagButton span,.experienceResults .addItemToShoppingBagButton .text,.products .addItemToShoppingBagButton span,.products .addItemToShoppingBagButton .text {
+    position: relative;
+    padding: 0;
+    margin: 0
+}
+
+.relatedItems .addItemToShoppingBagButton:before,.experienceResults .addItemToShoppingBagButton:before,.products .addItemToShoppingBagButton:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    border: 1px solid #000
+}
+
+.relatedItems .addItemToShoppingBagButton:hover:before,.relatedItems .addItemToShoppingBagButton:focus:before,.experienceResults .addItemToShoppingBagButton:hover:before,.experienceResults .addItemToShoppingBagButton:focus:before,.products .addItemToShoppingBagButton:hover:before,.products .addItemToShoppingBagButton:focus:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    cursor: pointer
+}
+
+.relatedItems .addItemToShoppingBagButton:hover .icon,.relatedItems .addItemToShoppingBagButton:hover .text,.relatedItems .addItemToShoppingBagButton:focus .icon,.relatedItems .addItemToShoppingBagButton:focus .text,.experienceResults .addItemToShoppingBagButton:hover .icon,.experienceResults .addItemToShoppingBagButton:hover .text,.experienceResults .addItemToShoppingBagButton:focus .icon,.experienceResults .addItemToShoppingBagButton:focus .text,.products .addItemToShoppingBagButton:hover .icon,.products .addItemToShoppingBagButton:hover .text,.products .addItemToShoppingBagButton:focus .icon,.products .addItemToShoppingBagButton:focus .text {
+    cursor: pointer
+}
+
+.relatedItems .addItemToShoppingBagButton[disabled],.relatedItems .addItemToShoppingBagButton.is-disabled,.experienceResults .addItemToShoppingBagButton[disabled],.experienceResults .addItemToShoppingBagButton.is-disabled,.products .addItemToShoppingBagButton[disabled],.products .addItemToShoppingBagButton.is-disabled {
+    color: #fff
+}
+
+.relatedItems .addItemToShoppingBagButton[disabled]:before,.relatedItems .addItemToShoppingBagButton.is-disabled:before,.experienceResults .addItemToShoppingBagButton[disabled]:before,.experienceResults .addItemToShoppingBagButton.is-disabled:before,.products .addItemToShoppingBagButton[disabled]:before,.products .addItemToShoppingBagButton.is-disabled:before {
+    background-color: gray;
+    border: 1px solid gray;
+    cursor: default
+}
+
+.relatedItems .addItemToShoppingBagButton[disabled]:hover,.relatedItems .addItemToShoppingBagButton.is-disabled:hover,.experienceResults .addItemToShoppingBagButton[disabled]:hover,.experienceResults .addItemToShoppingBagButton.is-disabled:hover,.products .addItemToShoppingBagButton[disabled]:hover,.products .addItemToShoppingBagButton.is-disabled:hover {
+    cursor: default
+}
+
+.relatedItems .addItemToShoppingBagButton[disabled]:hover:before,.relatedItems .addItemToShoppingBagButton.is-disabled:hover:before,.experienceResults .addItemToShoppingBagButton[disabled]:hover:before,.experienceResults .addItemToShoppingBagButton.is-disabled:hover:before,.products .addItemToShoppingBagButton[disabled]:hover:before,.products .addItemToShoppingBagButton.is-disabled:hover:before {
+    cursor: default;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.relatedItems .addItemToShoppingBagButton[disabled]:hover .icon,.relatedItems .addItemToShoppingBagButton[disabled]:hover .text,.relatedItems .addItemToShoppingBagButton.is-disabled:hover .icon,.relatedItems .addItemToShoppingBagButton.is-disabled:hover .text,.experienceResults .addItemToShoppingBagButton[disabled]:hover .icon,.experienceResults .addItemToShoppingBagButton[disabled]:hover .text,.experienceResults .addItemToShoppingBagButton.is-disabled:hover .icon,.experienceResults .addItemToShoppingBagButton.is-disabled:hover .text,.products .addItemToShoppingBagButton[disabled]:hover .icon,.products .addItemToShoppingBagButton[disabled]:hover .text,.products .addItemToShoppingBagButton.is-disabled:hover .icon,.products .addItemToShoppingBagButton.is-disabled:hover .text {
+    cursor: default
+}
+
+.products .module_wrapper .item {
+    vertical-align: top;
+    width: 31.33%;
+    margin-left: 0.845%;
+    margin-right: 0.845%
+}
+
+.products .module_wrapper .item.banner_double {
+    width: 64.35%
+}
+
+@media (max-width: 1600px) {
+    .products .module_wrapper .item {
+        width:31.25%
+    }
+
+    .products .module_wrapper .item.banner_double {
+        width: 64.7%
+    }
+}
+
+@media (max-width: 1024px) {
+    .products .module_wrapper .item {
+        width:31.15%
+    }
+}
+
+#wrapperRelatedItems,.products_slider_homepage {
+    padding-left: 6.588%;
+    padding-right: 6.588%;
+    overflow-y: hidden;
+    padding-top: 8%;
+    background: #fff
+}
+
+@media (max-width: 1024px) {
+    #wrapperRelatedItems,.products_slider_homepage {
+        padding-left:30px;
+        padding-right: 30px
+    }
+}
+
+@media (max-width: 1024px) {
+    #wrapperRelatedItems,.products_slider_homepage {
+        padding-left:6.588%;
+        padding-right: 6.588%
+    }
+}
+
+@media (max-width: 1023px) {
+    #wrapperRelatedItems,.products_slider_homepage {
+        padding-top:2%
+    }
+}
+
+#wrapperRelatedItems .sliderPaginationWrapper,.products_slider_homepage .sliderPaginationWrapper {
+    padding-bottom: 26px;
+    text-align: center
+}
+
+@media (max-width: 1024px) {
+    #wrapperRelatedItems .sliderPaginationWrapper,.products_slider_homepage .sliderPaginationWrapper {
+        padding-bottom:10px
+    }
+}
+
+#wrapperRelatedItems .sliderNavigationWrapper,.products_slider_homepage .sliderNavigationWrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: auto
+}
+
+#wrapperRelatedItems .sliderNavigationWrapper .slick-prev,#wrapperRelatedItems .sliderNavigationWrapper .slick-next,.products_slider_homepage .sliderNavigationWrapper .slick-prev,.products_slider_homepage .sliderNavigationWrapper .slick-next {
+    position: absolute;
+    margin-top: 0
+}
+
+#wrapperRelatedItems .sliderNavigationWrapper .slick-prev,.products_slider_homepage .sliderNavigationWrapper .slick-prev {
+    left: -40px
+}
+
+#wrapperRelatedItems .sliderNavigationWrapper .slick-next,.products_slider_homepage .sliderNavigationWrapper .slick-next {
+    right: -40px
+}
+
+#wrapperRelatedItems .products,.products_slider_homepage .products {
+    opacity: 0
+}
+
+#wrapperRelatedItems .labelTop,.products_slider_homepage .labelTop {
+    display: block;
+    text-align: center
+}
+
+#wrapperRelatedItems .sliderTitle,.products_slider_homepage .sliderTitle {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    text-align: center;
+    padding: 15px 0 20px 0
+}
+
+body.jp #wrapperRelatedItems .sliderTitle,body.JP #wrapperRelatedItems .sliderTitle,body.jp .products_slider_homepage .sliderTitle,body.JP .products_slider_homepage .sliderTitle {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru #wrapperRelatedItems .sliderTitle,body.RU #wrapperRelatedItems .sliderTitle,body.ru .products_slider_homepage .sliderTitle,body.RU .products_slider_homepage .sliderTitle {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+@media (max-width: 1024px) {
+    #wrapperRelatedItems .sliderTitle,.products_slider_homepage .sliderTitle {
+        padding:10px 0
+    }
+}
+
+#wrapperRelatedItems .relatedItem,#wrapperRelatedItems .item,.products_slider_homepage .relatedItem,.products_slider_homepage .item {
+    position: relative;
+    width: 27.965%;
+    padding: 0
+}
+
+#wrapperRelatedItems .relatedItem .wrapper,#wrapperRelatedItems .item .wrapper,.products_slider_homepage .relatedItem .wrapper,.products_slider_homepage .item .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    margin: 0 1.464%
+}
+
+#wrapperRelatedItems .relatedItem .wrapper .info,#wrapperRelatedItems .item .wrapper .info,.products_slider_homepage .relatedItem .wrapper .info,.products_slider_homepage .item .wrapper .info {
+    height: 105px
+}
+
+#wrapperRelatedItems .relatedItem .wrapper .expand-layer .info,#wrapperRelatedItems .item .wrapper .expand-layer .info,.products_slider_homepage .relatedItem .wrapper .expand-layer .info,.products_slider_homepage .item .wrapper .expand-layer .info {
+    height: auto
+}
+
+#wrapperRelatedItems.loadingFailed,.products_slider_homepage.loadingFailed {
+    display: inline-block;
+    background-image: url("//www.karl.com/ytos/resources/KARLLAGERFELD/images/icons/logoHeader_white.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 182px;
+    height: 80px;
+    background-color: #000;
+    background-position: center center;
+    background-size: auto
+}
+
+#wrapperRelatedItems .sliderNavigationWrapper {
+    position: absolute;
+    top: 45%;
+    height: 50px;
+    width: -webkit-calc(100% - 6.588%*2);
+    width: calc(100% - 6.588%*2)
+}
+
+.pre_footer {
+    padding-left: 6.588%;
+    padding-right: 6.588%;
+    min-height: 260px;
+    margin: 50px 0 90px;
+    background: #f8f8f8;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex
+}
+
+@media (max-width: 1024px) {
+    .pre_footer {
+        padding-left:30px;
+        padding-right: 30px
+    }
+}
+
+.pre_footer.dark {
+    background: #000
+}
+
+.pre_footer.dark .description,.pre_footer.dark .title {
+    color: #fff
+}
+
+.pre_footer .description {
+    letter-spacing: 0.4px;
+    color: #000;
+    text-align: center;
+    max-width: 100%
+}
+
+.pre_footer .pre_footer_inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.pre_footer .pre_footer_inner .pre_footer_box {
+    position: relative;
+    width: 33.3333333%;
+    padding: 50px 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start
+}
+
+.pre_footer .pre_footer_inner .pre_footer_box:not(:last-child):after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    bottom: 25%
+}
+
+.pre_footer .pre_footer_inner .pre_footer_box .icon {
+    height: 26px;
+    width: 100%;
+    margin-bottom: 21px
+}
+
+.pre_footer .pre_footer_inner .pre_footer_box .title {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: .84px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    letter-spacing: 0.4px;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+body.jp .pre_footer .pre_footer_inner .pre_footer_box .title,body.JP .pre_footer .pre_footer_inner .pre_footer_box .title {
+    font-family: "Hiragino Kaku Gothic ProN","GraphikRegular",Meiryo,Arial,sans-serif !important;
+    font-weight: 600 !important
+}
+
+body.ru .pre_footer .pre_footer_inner .pre_footer_box .title,body.RU .pre_footer .pre_footer_inner .pre_footer_box .title {
+    font-family: Arial,sans-serif,"GothamBook" !important;
+    font-weight: 600 !important
+}
+
+/*# sourceMappingURL=home.css.map */
+
+/*Photoslurp homepage styles*/
+
+.widget-title {
+	/*margin: 10px 0;
+	text-align: center;    
+	color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 700;*/
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    font-weight: 400;
+    font-family: "GothamBold",Arial,sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.widget-subtitle {
+	text-align: center;
+	/*color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;*/
+}

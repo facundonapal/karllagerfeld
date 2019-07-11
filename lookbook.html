@@ -33,6 +33,7 @@
 <link rel='stylesheet' id='shared-css'  href='https://www.karl.com/ytos/releases/KARLLAGERFELD/2019-07-02/6c102a7/css/desktop/shared.css' type='text/css' media='all' />
 <link rel='stylesheet' id='style-css'  href='https://www.karl.com/experience/wp-content/themes/karl/css/output/style.1560239080.css' type='text/css' media='all' />
 <link rel='stylesheet' id='slick-css'  href='https://www.karl.com/experience/wp-content/themes/karl/css/output/slick.1560239080.css' type='text/css' media='all' />
+<link rel="stylesheet" href="css/lookbook.css">
 
 <script>
 
@@ -62,6 +63,7 @@ var wokOptions = {"language":"en","isHome":"","template":"template-theywearkarl"
         <script type="text/javascript">
             var $ = jQuery.noConflict();
         </script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body class="page-template page-template-template-theywearkarl template-theywearkarl page page-id-64335 karllagerfeld en experience gb" data-experience="WOK">
     <div class="fixed-fix"></div>
@@ -506,23 +508,26 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
 <!--start PhotoSlurp embed code-->
 
-<div class="fancy_an">
-    <h2 style="text-align: center; margin-top: 48px;">Show us how you #LiveLoveDubarry</h2>
+
+    <h2 style="text-align: center; margin-top: 48px;" data-aos="fade-down" data-aos-duration="2000">#KARLLAGERFELD</h2>
 <div class = "wrapper-widgets" >
-    <div class = "tabss">
+    <div class = "tabss"data-aos="fade-up" data-aos-duration="2000">
         <input type="radio" name="tabs" id="tab1" checked>
             <label for="tab1">
                <p class="tab-style">All</p>
             </label>
         <input type="radio" name="tabs" id="tab2" onclick="boldie()">
             <label for="tab2">
-               <p class="tab-style">Women's Footwear</p>
+               <p class="tab-style">Women</p>
             </label>
         <input type="radio" name="tabs" id="tab3">
             <label for="tab3">
-               <p class="tab-style">Men's Footwear</p>
+               <p class="tab-style">Men</p>
             </label>
-        
+        <input type="radio" name="tabs" id="tab4">
+            <label for="tab4">
+               <p class="tab-style">Kids</p>
+            </label>
 
 
         <div id="tab-content1" class="tab-content">
@@ -540,6 +545,11 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
             </div>
         </div>
+         <div id="tab-content4" class="tab-content">
+            <div id="widget-container4" class="ps-container">
+
+            </div>
+        </div>
         
     </div>
 </div>
@@ -551,7 +561,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                     (function() {
                         photoSlurpWidgetSettings['widget-container1'] = {
                         widgetType: 'gallery',
-                        albumId: 1649,
+                        albumId: 1872,
                         lang: 'en',
                         widgetId: 'lookbook-gallery-all',
                         autoscrollLimit: 10,
@@ -567,9 +577,9 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                     };
                     photoSlurpWidgetSettings['widget-container2'] = {
                         widgetType: 'gallery',
-                        albumId: 1649,
+                        albumId: 1872,
                         lang: 'en',
-                        widgetId: 'lookbook-gallery-men',
+                        widgetId: 'lookbook-gallery-women',
                         autoscrollLimit: 10,
                         pageLimit: 18,
                         varyingThumbSizes: true,
@@ -584,9 +594,9 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                     };
                     photoSlurpWidgetSettings['widget-container3'] = {
                         widgetType: 'gallery',
-                        albumId: 1649,
+                        albumId: 1872,
                         lang: 'en',
-                        widgetId: 'lookbook-gallery-women',
+                        widgetId: 'lookbook-gallery-men',
                         autoscrollLimit: 10,
                         pageLimit: 24,
                         varyingThumbSizes: true,
@@ -594,6 +604,23 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                         theme: 'modern',
                         thumbOverlay: true,
                         collection: 'men',
+                        shopThisLookText:'Shop it now',
+                        ctaButton:'Buy',
+                        visibleProducts: 2,
+                        debug: true
+                    };
+                    photoSlurpWidgetSettings['widget-container4'] = {
+                        widgetType: 'gallery',
+                        albumId: 1872,
+                        lang: 'en',
+                        widgetId: 'lookbook-gallery-kids',
+                        autoscrollLimit: 10,
+                        pageLimit: 24,
+                        varyingThumbSizes: true,
+                        pageType: 'lookbook',
+                        theme: 'modern',
+                        thumbOverlay: true,
+                        collection: 'kids',
                         shopThisLookText:'Shop it now',
                         ctaButton:'Buy',
                         visibleProducts: 2,
@@ -611,10 +638,6 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
 
 <!--end of photoslurp embed code-->
-
-
-    
-<h1>something</h1>
 
 
     <aside id="newsletter_prefooter">
@@ -1061,7 +1084,7 @@ yTos.accessibility.notificationBox.delay = 500;
 <script type='text/javascript' src='https://www.karl.com/ytos/resources/BASE/js/require/require-2.1.10.min.js'></script>
 <script type='text/javascript' src='https://www.karl.com/ytos/helpers/framework-3.16.10/framework.min.js'></script>
 <script type='text/javascript' src='https://www.karl.com/ytos/releases/KARLLAGERFELD/2019-07-02/6c102a7/js/desktop/SharedLib.min.js'></script>
-<script type='text/javascript' src='https://www.karl.com/ytos/releases/KARLLAGERFELD/2019-07-02/6c102a7/js/desktop/CommonLib.min.js'></script>
+<script type='text/javascript' src='js/CommonLib.min.js'></script>
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/jquery.visible.1560239081.js'></script>
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/jquery.smartscroll.1560239081.js'></script>
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/imagesloaded.pkgd.min.1560239080.js'></script>
@@ -1071,7 +1094,10 @@ yTos.accessibility.notificationBox.delay = 500;
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/isotope.pkgd.min.1560239081.js'></script>
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/scope.1560239081.js'></script>
 <script type='text/javascript' src='https://www.karl.com/experience/cms/wp-includes/js/wp-embed.min.498.js'></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
