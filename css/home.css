@@ -2080,15 +2080,10 @@ body.ru .pre_footer .pre_footer_inner .pre_footer_box .title,body.RU .pre_footer
 
 /*# sourceMappingURL=home.css.map */
 
-/*Photoslurp homepage styles*/
+/* Photoslurp homepage styles */
 
 .widget-title {
-	/*margin: 10px 0;
-	text-align: center;    
-	color: rgb(0, 0, 0);
-    font-size: 36px;
-    font-weight: 700;*/
-    font-size: 1.8rem;
+	font-size: 1.8rem;
     line-height: 2.6rem;
     text-transform: uppercase;
     letter-spacing: 2.6px;
@@ -2100,9 +2095,30 @@ body.ru .pre_footer .pre_footer_inner .pre_footer_box .title,body.RU .pre_footer
 
 .widget-subtitle {
 	text-align: center;
-	/*color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: center;*/
+}
+
+#my-account-trigger-button {
+    background-color: transparent;
+    width: 40px;
+    position: relative;
+    right: 28%;
+}
+
+
+.overlay-myaccount-list {
+    z-index: 1;
+    position: relative;
+    top: 9.2em;
+    text-align: center;
+}
+
+.overlay-myaccount-list > li {
+	display: inline;
+	margin: 0 2.76em;
+	color: transparent;
+	cursor: pointer;
+}
+
+.overlay-myaccount-list > li:hover {
+	border-bottom: 1px solid black;
 }

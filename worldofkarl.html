@@ -34,6 +34,7 @@
 <link rel='stylesheet' id='shared-css'  href='https://www.karl.com/ytos/releases/KARLLAGERFELD/2019-07-02/6c102a7/css/desktop/shared.css' type='text/css' media='all' />
 <link rel='stylesheet' id='style-css'  href='https://www.karl.com/experience/wp-content/themes/karl/css/output/style.1560239080.css' type='text/css' media='all' />
 <link rel='stylesheet' id='slick-css'  href='https://www.karl.com/experience/wp-content/themes/karl/css/output/slick.1560239080.css' type='text/css' media='all' />
+<link href="css/home.css" rel="stylesheet" />
 
 <script>
 
@@ -117,7 +118,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
 
 
-<div class="privacyPolicyContainer">
+<!-- <div class="privacyPolicyContainer">
     <div id="privacyPolicyBanner">
         <span class="privacyText">
             Starting from 31 July 2019, the new text of our Privacy Policy will be in force. KARL LAGERFELD and YNAP have redefined their respective roles relating to personal data processing, without any impact on the users. See the new <a href="/gb/Help/LegalArea/PrivacyPolicy">Privacy Policy</a> for further information on the update.
@@ -127,7 +128,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
             <span class="text closeButton-text">Close</span>
         </button>
     </div>
-</div>
+</div> -->
 
 
 
@@ -172,7 +173,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
 <!-- LOGO -->
         <div class="logo" itemscope="" itemtype="https://schema.org/Organization">
-            <a href="https://www.karl.com/gb" itemprop="url">
+            <a href="index.html" itemprop="url">
                 <span class="visuallyHidden">Back to Home Page - KARLLAGERFELD</span>
             </a>
         </div>
@@ -197,12 +198,14 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                         </li>
                             <li class="accountButton iconHeader ">
                                 <button id="accountButton" title="MY ACCOUNT"  aria-expanded="false" aria-controls="accountLayer"  >
+                                    
                                     <span class="icon"></span>
                                     <span class="text visuallyHidden">My Account</span>
                                 </button>
 
                                 
                             </li>
+                            <button id="my-account-trigger-button" onclick="displayMyAccount()" style="position: relative; right: 35px; background: transparent; z-index: 999;"></button>
                             <li class="wishListButton iconHeader">
 
 
@@ -237,7 +240,28 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
                 </nav>
 
             </div>
+<!--start of my account menu-->
+<div id="my-accounts" style="display: none;">
+    
 
+    <div class="overlayer-myaccount-wrapper">
+       <ul class="overlay-myaccount-list">
+           <li class="overlayer-myaccount-single">My Wishlist</li>
+           <li class="overlayer-myaccount-single">My Profile</li>
+           <li class="overlayer-myaccount-single">My Addresses</li>
+           <li class="overlayer-myaccount-single">My Orders</li>
+           <li class="overlayer-myaccount-single">My Cards</li>
+           <li class="overlayer-myaccount-single"><a href="myaccount.html">#KARLLAGERFELD</a></li>
+           <li class="overlayer-myaccount-single">Log out</li>
+       </ul>
+    
+    <img src="assets/img/my-accounts.png" alt="" style="position: relative;
+    top: -13em;">
+    
+</div>
+</div>
+
+            <!--end of my account menu-->
 <nav class="menu menu_level0">
     
     <div class="menu_prev" aria-hidden="true">
@@ -625,7 +649,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
         </li>
 </ul>
 
-                    <a href="https://www.karl.com/gb" class="logo" itemprop="url">
+                    <a href="index.html" class="logo" itemprop="url">
                         <span class="visuallyHidden">Back to Home Page - KARLLAGERFELD</span>
                     </a>
             </div>
@@ -989,8 +1013,8 @@ yTos.accessibility.notificationBox.delay = 500;
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/world-of-karl.1560239081.js'></script>
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/isotope.pkgd.min.1560239081.js'></script>
 <script type='text/javascript' src='https://www.karl.com/experience/wp-content/themes/karl/js/output/scope.1560239081.js'></script>
-<script type='text/javascript' src='https://www.karl.com/experience/cms/wp-includes/js/wp-embed.min.498.js'></script>
-
+<!-- <script type='text/javascript' src='https://www.karl.com/experience/cms/wp-includes/js/wp-embed.min.498.js'></script> -->
+<script src="js/displayMyAccount.js"></script>
 </body>
 
 </html>
