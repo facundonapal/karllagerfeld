@@ -624,7 +624,7 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 </div>
 
 
-    <main id="main" class="wrapper container-1600">
+    <main id="main" class="wrapper container-1600" style="min-height: 399px!important; height: 400px !important">
         
 
 
@@ -683,7 +683,12 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
   &quot;wishListCount&quot;: 0
 }" data-ytos-opt="{&quot;orderBy&quot;:&quot;&quot;}" data-ytos-ver="2.0.2" id="wishListitemsList">    
 
-        <div class="photoslurp-wraper" data-aos="fade-down" data-aos-duration="2000">
+        
+
+
+    </main>
+
+<div class="photoslurp-wraper" data-aos="fade-down" data-aos-duration="2000">
 <!-- Start Photoslurp Embed Code -->
 <h1 class="widget-title" style="text-align: center; margin-bottom: 0 !important;">#KARLLAGERFELD</h1>
 <p class="widget-subtitle" style="text-align: center">Get inspired by images from the world’s top fashion influencers.</p>
@@ -697,12 +702,14 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 (function() {
     photoSlurpWidgetSettings['widgetContainerID'] = {
         widgetId: 'homepageCarousel',
-        widgetType: 'carousel',
+        widgetType: 'gallery',
         albumId: 1872,
         theme: 'modern',
         lang: 'en',
         pageType: 'product',
         showSubmit: true,
+        pageLimit: 10,
+        autoscrollLimit: 1,
     };
     var script = document.createElement('script');
     script.async = true;
@@ -718,11 +725,6 @@ yTos.configuration.defaults = {"Gender":"D","Season":"P"};
 
     </section>
 </div>
-
-
-    </main>
-
-
 
 
     <aside id="newsletter_prefooter">

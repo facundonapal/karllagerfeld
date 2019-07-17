@@ -68,11 +68,29 @@
     display: block;
 }
 
-.ps-images {
-    display: grid;
-    grid-gap: 1px !important;
-    grid-template-columns: repeat(auto-fill,250px) !important;
+#widget-container1 .ps-images {
+    grid-template-columns: repeat(auto-fill,150px)!important;
+    grid-gap: 10px!important;
 }
+
+#widget-container2 .ps-images {
+    grid-template-columns: repeat(auto-fill,calc(33% - 10px))!important;
+    grid-gap: 10px!important;
+}
+
+#widget-container3 .ps-images {
+    grid-template-columns: repeat(auto-fill,calc(33% - 10px))!important;
+    grid-gap: 10px!important;
+}
+
+#widget-container4 .ps-images {
+    grid-template-columns: repeat(auto-fill,calc(33% - 10px))!important;
+    grid-gap: 10px!important;
+}
+
+
+
+
 
 .ps-container {
     margin-top: 15px;

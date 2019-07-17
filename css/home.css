@@ -2097,6 +2097,10 @@ body.ru .pre_footer .pre_footer_inner .pre_footer_box .title,body.RU .pre_footer
 	text-align: center;
 }
 
+#widgetContainerID {
+    margin: 0 96px !important;
+}
+
 #my-account-trigger-button {
     background-color: transparent;
     width: 40px;
@@ -2122,3 +2126,8 @@ body.ru .pre_footer .pre_footer_inner .pre_footer_box .title,body.RU .pre_footer
 .overlay-myaccount-list > li:hover {
 	border-bottom: 1px solid black;
 }
+
+/* .ps-images {
+    transform: translateX(46px) !important;
+}
+ */
